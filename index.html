@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog Post</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-indigo-50 via-white to-purple-50 text-gray-800">
+
+    <!-- Blog Container -->
+    <div class="max-w-4xl mx-auto px-6 py-16 sm:px-8 lg:px-12">
+
+        <!-- Blog Post Header -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 leading-tight">
+                Mastering the Art of Responsive Web Design
+            </h1>
+            <p class="text-gray-500 mt-4 text-sm md:text-base mt-2">
+                By Jane Smith • Published on October 6, 2024 • 7 min read
+            </p>
+        </header>
+
+        <!-- Featured Image -->
+        <div class="w-full mb-10 transition duration-500 transform hover:scale-105">
+            <img src="http://blog.alakmalak.com/wp-content/uploads/2015/09/Responsive-Web-Design-1024x601.png" alt="Responsive Web Design" class="w-full rounded-3xl object-cover shadow-lg">
+        </div>
+
+        <!-- Blog Content -->
+        <article class="prose lg:prose-lg xl:prose-xl prose-indigo max-w-none text-gray-700 leading-relaxed">
+            <p>
+                In today's fast-paced digital world, the ability to create websites that function seamlessly across all devices is more important than ever. As mobile traffic continues to dominate, having a responsive design is no longer just a "nice-to-have"—it's essential.
+            </p>
+
+            <h2 class="text-2xl font-bold text-indigo-700">
+                What Exactly Is Responsive Web Design?
+            </h2>
+            <p>
+                Responsive web design (RWD) is a method of designing and coding a website so that it adjusts its layout and content to look great on any screen size—whether that’s a desktop, tablet, or smartphone. The goal is to ensure a fluid and intuitive user experience, regardless of the device being used.
+            </p>
+
+            <blockquote class="p-4 italic border-l-4 border-indigo-500 bg-indigo-50 text-indigo-700">
+                “Responsive design is not about 'fitting' content on different devices—it's about providing an optimal experience for every user, no matter what device they use.”
+            </blockquote>
+
+            <p>
+                This means utilizing flexible grids, fluid images, and CSS media queries to ensure content automatically adjusts based on the screen's dimensions.
+            </p>
+
+            <h3 class="text-xl font-bold text-purple-700">The Importance of Typography in Responsive Design</h3>
+            <p>
+                Typography plays a significant role in how users interact with your content. On smaller screens, text needs to remain legible without feeling cramped, while on larger screens, it should scale appropriately without overwhelming the layout.
+            </p>
+            <p>
+                Responsive typography adjusts font sizes, line heights, and letter spacing based on the device’s viewport. Tailwind CSS makes it easy to implement responsive typography with utility classes like <code>text-sm</code> for smaller screens and <code>text-xl</code> for larger screens.
+            </p>
+
+            <figure class="w-full my-8 transition duration-500 transform hover:scale-105">
+                <img src="https://i.ytimg.com/vi/R1ehrIk0oUU/maxresdefault.jpg" alt="Responsive Typography" class="w-full rounded-2xl shadow-md object-cover">
+                <figcaption class="text-gray-500 text-sm text-center mt-2">A perfect balance of typography across devices</figcaption>
+            </figure>
+
+            <p>
+                By using relative units like <code>rem</code> and <code>em</code> instead of fixed pixel sizes, you can ensure your typography is responsive. Tailwind CSS provides built-in utilities for scaling text easily based on breakpoints.
+            </p>
+
+            <h3 class="text-xl font-bold text-purple-700">Making Images Responsive</h3>
+            <p>
+                One of the most common pitfalls in web design is using fixed-width images that don’t scale well across devices. Images should adjust dynamically to fit their containers while maintaining their aspect ratios. This is where Tailwind's <code>object-cover</code> and <code>max-w-full</code> utilities come in handy.
+            </p>
+
+            <ul class="list-disc pl-6">
+                <li><strong>Object Cover:</strong> Ensures the image fills its container without distorting.</li>
+                <li><strong>Max Width Full:</strong> Forces the image to never exceed the width of its container, keeping it responsive.</li>
+            </ul>
+
+            <p>
+                With the right approach, responsive images not only enhance the visual appeal of your site but also improve performance by loading appropriately sized images based on the user's device.
+            </p>
+
+            <p>
+                Remember, responsive design is about more than just making a site "look good" on different screens—it's about crafting a seamless user experience that adjusts to the user's needs and behaviors.
+            </p>
+        </article>
+
+        <!-- Author Section -->
+        <footer class="mt-16 text-center">
+            <p class="text-gray-700 text-lg font-semibold">
+                Written by <span class="text-indigo-700 font-bold">Siddharth Maddheshiya</span>
+            </p>
+            <p class="text-gray-500 text-base">
+                Siddharth is a front-end developer and UX enthusiast who specializes in creating responsive, user-friendly web experiences. When she’s not coding, you can find her writing about the latest trends in web design and technology.
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>4
